@@ -18,7 +18,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, UITableViewDele
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = String(indexPath.row + 1)
+        cell.textLabel?.text = "Recording" + String(indexPath.row + 1)
         return cell
     }
     
